@@ -1,0 +1,6 @@
+/Api/appsettings.json
+/Api/bin
+.idea
+/Api/obj
+/Model/bin
+/Model/obj
