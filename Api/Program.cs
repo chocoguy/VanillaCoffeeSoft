@@ -1,7 +1,17 @@
 
+using Api.Helpers;
 using Api.SQLService;
 using Api.WebDataService;
+using Dapper;
 using Microsoft.AspNetCore.HttpOverrides;
+
+// All dates cross the DB boundary as RFC 3339 UTC with 'Z' — must run before any query.
+// RemoveTypeMap is required: DateTime is in Dapper's built-in type map, which would
+// otherwise take precedence over the handlers when binding parameters.
+SqlMapper.RemoveTypeMap(typeof(DateTime));
+SqlMapper.RemoveTypeMap(typeof(DateTime?));
+SqlMapper.AddTypeHandler(new SqliteDateTimeHandler());
+SqlMapper.AddTypeHandler(new SqliteNullableDateTimeHandler());
 
 var builder = WebApplication.CreateBuilder(args);
 var malApiKey = builder.Configuration.GetSection("MalClientId").Value;
@@ -24,7 +34,12 @@ builder.Services.AddScoped<IAnimeRespository, AnimeRepository>();
 builder.Services.AddScoped<IMalWebData, MalWebData>();
 
 builder.Services.AddOpenApi();
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new Rfc3339JsonConverter());
+        options.JsonSerializerOptions.Converters.Add(new NullableRfc3339JsonConverter());
+    });
 builder.Services.AddHttpClient(
     "MalClient",
     client =>

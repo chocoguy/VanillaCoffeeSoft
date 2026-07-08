@@ -6,6 +6,7 @@ public interface IMalWebData
 {
     Task<MAL_Anime> GetMALAnimeById(string malId);
     Task<MAL_Anime_Search> GetMALAnimeSearch(string query);
+    Task<MAL_Anime_Search> GetMALSeasonalAnime(int year, string season);
     Task<List<MAL_Recommendation>> GetMALAnimeRecommendations(string malId);
     Task<List<MAL_RelatedAnime>> GetMALAnimeRelatedAnime(string malId);
     Task<List<MAL_Picture>> GetMALAnimePictures(string malId);
@@ -49,6 +50,22 @@ public class MalWebData : IMalWebData
         {
             var client =  _httpFactory.CreateClient("MalClient");
             var res = await client.GetAsync($"anime?q={query}&limit=12&fields=alternative_titles,start_date,start_season,media_type,num_episodes");
+            MAL_Anime_Search malAnimeSearch = await res.Content.ReadFromJsonAsync<MAL_Anime_Search>();
+            return malAnimeSearch;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+            return null;
+        }
+    }
+
+    public async Task<MAL_Anime_Search>? GetMALSeasonalAnime(int year, string season)
+    {
+        try
+        {
+            var client = _httpFactory.CreateClient("MalClient");
+            var res = await client.GetAsync($"anime/season/{year}/{season}?limit=200&fields=alternative_titles,start_date,start_season,media_type,num_episodes&sort=anime_num_list_users");
             MAL_Anime_Search malAnimeSearch = await res.Content.ReadFromJsonAsync<MAL_Anime_Search>();
             return malAnimeSearch;
         }

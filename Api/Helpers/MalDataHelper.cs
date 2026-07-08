@@ -22,6 +22,108 @@ public class MalDataHelper
     }
     
     
+    /// <summary>
+    /// Maps a calendar month to its MAL season name.
+    /// Winter = Dec-Feb, Spring = Mar-May, Summer = Jun-Aug, Fall = Sep-Nov.
+    /// </summary>
+    public static string ResolveSeasonName(DateTime date)
+    {
+        return date.Month switch
+        {
+            1 or 2 or 3 => "winter",
+            4 or 5 or 6 => "spring",
+            7 or 8 or 9 => "summer",
+            _ => "fall"
+        };
+    }
+
+    public static List<Anime> MalSeasonalAnimeToDbAnime(MAL_Anime_Search malAnimeSearch, int year, string season)
+    {
+        List<Anime> translatedAnime = new List<Anime>();
+
+        if (malAnimeSearch?.data == null)
+            return translatedAnime;
+
+        foreach (var m in malAnimeSearch.data)
+        {
+            if (m?.node?.start_season == null)
+                continue;
+
+            if (m.node.start_season.year == year &&
+                string.Equals(m.node.start_season.season, season, StringComparison.OrdinalIgnoreCase))
+            {
+                translatedAnime.Add(MalNodeToAnime(m.node));
+            }
+        }
+
+        return translatedAnime;
+    }
+
+    public static List<ParsedReccomendedAnime> MalRecommendationsToParsed(List<MAL_Recommendation> recommendations)
+    {
+        List<ParsedReccomendedAnime> parsed = new List<ParsedReccomendedAnime>();
+
+        if (recommendations == null)
+            return parsed;
+
+        foreach (var r in recommendations)
+        {
+            if (r?.node == null)
+                continue;
+
+            parsed.Add(new ParsedReccomendedAnime
+            {
+                malId = r.node.id,
+                title = r.node.title,
+                poster = r.node.main_picture?.large ?? r.node.main_picture?.medium
+            });
+        }
+
+        return parsed;
+    }
+
+    public static List<ParsedRelatedAnime> MalRelatedAnimeToParsed(List<MAL_RelatedAnime> relatedAnime)
+    {
+        List<ParsedRelatedAnime> parsed = new List<ParsedRelatedAnime>();
+
+        if (relatedAnime == null)
+            return parsed;
+
+        foreach (var r in relatedAnime)
+        {
+            if (r?.node == null)
+                continue;
+
+            parsed.Add(new ParsedRelatedAnime
+            {
+                malId = r.node.id,
+                title = r.node.title,
+                poster = r.node.main_picture?.large ?? r.node.main_picture?.medium,
+                relationType = r.relation_type_formatted ?? r.relation_type
+            });
+        }
+
+        return parsed;
+    }
+
+    public static List<string> MalPicturesToStrings(List<MAL_Picture> pictures)
+    {
+        List<string> parsed = new List<string>();
+
+        if (pictures == null)
+            return parsed;
+
+        foreach (var p in pictures)
+        {
+            var url = p?.large ?? p?.medium;
+            if (!string.IsNullOrWhiteSpace(url))
+                parsed.Add(url);
+        }
+
+        return parsed;
+    }
+
+
     public static Anime MalNodeToAnime(MAL_Node node)
     {
         if (node == null)
@@ -36,7 +138,7 @@ public class MalDataHelper
             TitleKana = node.alternative_titles?.ja,
             EpisodeCount = node.num_episodes,
             Year = node.start_season?.year ?? 2002,
-            OnAir = ParseMalDate(node.start_date) ?? default,
+            OnAir = DateTimeHelper.ParseFlexible(node.start_date) ?? default,
             Season = ResolveSeason(node),
             Poster = node.main_picture?.large ?? node.main_picture?.medium,
             MediaType = ResolveMediaType(node.media_type),
@@ -51,7 +153,7 @@ public class MalDataHelper
         if (node.start_season?.year > 0)
             return node.start_season.year;
  
-        var parsedDate = ParseMalDate(node.start_date);
+        var parsedDate = DateTimeHelper.ParseFlexible(node.start_date);
         return parsedDate?.Year ?? 0;
     }
     
@@ -96,32 +198,6 @@ public class MalDataHelper
         return newMediaType;
 
     }
- 
-    /// <summary>
-    /// MAL dates can arrive as "yyyy", "yyyy-MM", or "yyyy-MM-dd".
-    /// Returns null if the string is empty or unparseable.
-    /// </summary>
-    private static DateTime? ParseMalDate(string malDate)
-    {
-        if (string.IsNullOrWhiteSpace(malDate))
-            return null;
- 
-        string[] formats = { "yyyy-MM-dd", "yyyy-MM", "yyyy" };
- 
-        foreach (var format in formats)
-        {
-            if (DateTime.TryParseExact(malDate, format,
-                    System.Globalization.CultureInfo.InvariantCulture,
-                    System.Globalization.DateTimeStyles.None,
-                    out var result))
-            {
-                return result;
-            }
-        }
- 
-        // Last resort: let the framework try
-        return DateTime.TryParse(malDate, out var fallback) ? fallback : null;
-    }
-    
-    
+
+
 }

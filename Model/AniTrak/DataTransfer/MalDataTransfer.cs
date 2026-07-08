@@ -100,6 +100,7 @@ namespace Model.AniTrak.DataTransfer;
     }
 
 
+
     public class MAL_Datum
     {
         [JsonPropertyName("node")]
