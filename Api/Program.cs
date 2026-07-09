@@ -1,5 +1,7 @@
 
+using System.Threading.RateLimiting;
 using Api.Helpers;
+using Api.Services;
 using Api.SQLService;
 using Api.WebDataService;
 using Dapper;
@@ -32,6 +34,7 @@ builder.Logging.AddFilter("Api", LogLevel.Information);
 
 builder.Services.AddScoped<IAnimeRespository, AnimeRepository>();
 builder.Services.AddScoped<IMalWebData, MalWebData>();
+builder.Services.AddHostedService<StaleRecordSyncService>();
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers()
@@ -54,14 +57,35 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddSingleton<IDbConnectionFactory, SqliteConnectionFactory>();
 
+// Per-client-IP fixed window. Runs after UseForwardedHeaders so RemoteIpAddress
+// is the forwarded client IP, not the reverse proxy's.
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(context =>
+        RateLimitPartition.GetFixedWindowLimiter(
+            context.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+            _ => new FixedWindowRateLimiterOptions
+            {
+                PermitLimit = 60,
+                Window = TimeSpan.FromMinutes(1),
+                QueueLimit = 0
+            }));
+});
+
 
 var app = builder.Build();
 
-app.UseCors("AllowAll");
 app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
 });
+app.UseCors("AllowAll");
+app.UseRateLimiter();
+
+// Landing page: "/" serves wwwroot/index.html
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 
 if (app.Environment.IsDevelopment())
@@ -71,6 +95,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.MapControllers();
-app.MapGet("/", () => Results.Ok("VCS Api Version: " + systemVersion));
+app.MapGet("/api/version", () => Results.Ok("VCS Api Version: " + systemVersion));
 
 app.Run();

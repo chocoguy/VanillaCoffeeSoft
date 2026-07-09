@@ -17,6 +17,8 @@ public interface IAnimeRespository
     Task<Anime?> GetByIdAsync(int id);
     Task<IEnumerable<Anime>?> GetAllAsync();
     Task<IEnumerable<Anime>?> SearchAsync(string? query = null, int page = 1, int pageSize = 20);
+    Task<IEnumerable<Anime>?> GetSeasonalAsync(int year, string season);
+    Task<IEnumerable<int>> GetStaleMalIdsAsync(DateTime olderThan);
     Task<int?> AddEditAsync(MAL_Anime malAnime);
     Task<bool> CheckIfExists(int id);
 }
@@ -102,8 +104,10 @@ WHERE a.AnimeId = @Id;";
         }
         catch (Exception ex)
         {
+            // Rethrow so the controller can tell a DB failure (500) apart from
+            // a missing id (null → 404).
             _logger.LogError(ex, ex.Message);
-            return null;
+            throw;
         }
     }
 
@@ -136,10 +140,11 @@ WHERE a.AnimeId = @Id;";
             string whereClause = "";
             string orderBy = "ORDER BY a.Title";
 
-            if (!string.IsNullOrWhiteSpace(query))
+            var matchExpression = ToFtsMatchExpression(query);
+            if (matchExpression != null)
             {
                 whereClause = "WHERE f.AnimeFTSReaL MATCH @SearchQuery";
-                parameters.Add("SearchQuery", query);
+                parameters.Add("SearchQuery", matchExpression);
                 orderBy = "ORDER BY f.rank DESC, a.Title";
             }
             
@@ -182,6 +187,69 @@ LIMIT @PageSize OFFSET @Offset;";
         {
             _logger.LogError(ex, ex.Message);
             return null;
+        }
+    }
+
+    public async Task<IEnumerable<Anime>?> GetSeasonalAsync(int year, string season)
+    {
+        try
+        {
+            if (!AniTrakDictionary.D_Season.TryGetValue(season, out var seasonKey))
+                return Enumerable.Empty<Anime>();
+
+            using var connection = _dbConnection.CreateConnection();
+            connection.Open();
+
+            // Ordered by total MAL list members, mirroring the
+            // anime_num_list_users sort the MAL seasonal endpoint used.
+            const string sql = @"
+SELECT
+    a.animeid, a.MalId, a.title, a.titleshort, a.titleromanized, a.titlekana,
+    a.year, a.EpisodeCount, a.synopsis, a.poster, a.malscore,
+    s.SeasonId, s.Name,
+    mt.MediaTypeId, mt.Name
+FROM Anime a
+         INNER JOIN Season s ON a.SeasonKey = s.SeasonId
+         INNER JOIN MediaType mt ON a.MediaTypeKey = mt.MediaTypeId
+WHERE a.Year = @Year AND a.SeasonKey = @SeasonKey
+ORDER BY (a.MalWatching + a.MalCompleted + a.MalOnHold + a.MalDropped + a.MalPlanToWatch) DESC, a.Title;";
+
+            return await connection.QueryAsync<Anime, Season, MediaType, Anime>(
+                sql,
+                (animeItem, seasonItem, mediaType) =>
+                {
+                    if (seasonItem != null && seasonItem.SeasonId != 0)
+                        animeItem.Season = seasonItem;
+                    if (mediaType != null && mediaType.MediaTypeId != 0)
+                        animeItem.MediaType = mediaType;
+                    return animeItem;
+                },
+                new { Year = year, SeasonKey = seasonKey },
+                splitOn: "SeasonId,MediaTypeId");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+            return null;
+        }
+    }
+
+    public async Task<IEnumerable<int>> GetStaleMalIdsAsync(DateTime olderThan)
+    {
+        try
+        {
+            using var connection = _dbConnection.CreateConnection();
+            connection.Open();
+
+            // LastSynced is RFC 3339 TEXT, so lexicographic < is chronological.
+            return await connection.QueryAsync<int>(
+                "SELECT MalId FROM Anime WHERE MalId > 0 AND (LastSynced IS NULL OR LastSynced < @Cutoff);",
+                new { Cutoff = olderThan });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, ex.Message);
+            return Enumerable.Empty<int>();
         }
     }
 
@@ -373,6 +441,22 @@ SELECT last_insert_rowid();";
                     new { TagKey = tagId, AnimeKey = animeId }, transaction);
             }
         }
+    }
+
+    // FTS5 treats ", :, -, AND, etc. as query syntax, so raw user input like
+    // "Re:Zero" is a syntax error. Quoting each whitespace-separated token
+    // (with embedded quotes doubled) makes the input match literally.
+    private static string? ToFtsMatchExpression(string? query)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+            return null;
+
+        var tokens = query
+            .Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries)
+            .Select(t => "\"" + t.Replace("\"", "\"\"") + "\"");
+
+        var expression = string.Join(" ", tokens);
+        return expression.Length == 0 ? null : expression;
     }
 
     private static string? ResolveTitleShort(MAL_Anime malAnime)

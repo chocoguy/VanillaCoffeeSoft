@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanillaCoffeeSoft</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <main>
+        <h1>VanillaCoffeeSoft</h1>
+        <p class="tagline">Anime tracking API</p>
+
+        <section>
+            <h2>Endpoints</h2>
+            <ul>
+                <li><code>GET /api/AniTrak/Anime/{id}</code> — anime by id</li>
+                <li><code>GET /api/AniTrak/Anime/search?q=...</code> — search (falls back to MAL)</li>
+                <li><code>GET /api/AniTrak/Anime/seasonal</code> — current season</li>
+                <li><code>GET /api/AniTrak/Anime/{malId}/recommendations</code> — recommendations</li>
+                <li><code>GET /api/AniTrak/Anime/{malId}/related</code> — related anime</li>
+                <li><code>GET /api/AniTrak/Anime/{malId}/pictures</code> — pictures</li>
+            </ul>
+        </section>
+
+        <footer>
+            <span id="version">…</span>
+        </footer>
+    </main>
+
+    <script>
+        fetch('/api/version')
+            .then(res => res.ok ? res.json() : Promise.reject())
+            .then(v => { document.getElementById('version').textContent = v; })
+            .catch(() => { document.getElementById('version').textContent = ''; });
+    </script>
+</body>
+</html>

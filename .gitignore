@@ -1,4 +1,8 @@
 /Api/appsettings.json
+/Api/*.sqlite3
+/Api/*.sqlite3.bak
+/Api/*.sqlite3-wal
+/Api/*.sqlite3-shm
 /Api/bin
 .idea
 /Api/obj
