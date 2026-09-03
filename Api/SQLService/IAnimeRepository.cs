@@ -26,10 +26,10 @@ public interface IAnimeRespository
 public class AnimeRepository : IAnimeRespository
 {
 
-    private readonly IDbConnectionFactory _dbConnection;
+    private readonly IAniTrakDbConnectionFactory _dbConnection;
     private readonly ILogger<AnimeRepository> _logger;
 
-    public AnimeRepository(IDbConnectionFactory dbConnection, ILogger<AnimeRepository> logger)
+    public AnimeRepository(IAniTrakDbConnectionFactory dbConnection, ILogger<AnimeRepository> logger)
     {
         _dbConnection = dbConnection;
         _logger = logger;

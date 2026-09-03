@@ -8,19 +8,18 @@ public interface IDbConnectionFactory
     IDbConnection CreateConnection();
 }
 
-public class SqliteConnectionFactory : IDbConnectionFactory
+public abstract class SqliteConnectionFactory : IDbConnectionFactory
 {
     private readonly string _connectionString;
 
-    public SqliteConnectionFactory(IConfiguration configuration)
+    protected SqliteConnectionFactory(IConfiguration configuration, string connectionStringName)
     {
-        _connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string not set");
+        _connectionString = configuration.GetConnectionString(connectionStringName)
+            ?? throw new InvalidOperationException($"Connection string '{connectionStringName}' not set");
     }
 
     public IDbConnection CreateConnection()
     {
         return new SqliteConnection(_connectionString);
     }
-    
-    
 }

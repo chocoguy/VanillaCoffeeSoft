@@ -1,0 +1,116 @@
+#!/usr/bin/env zsh
+# gtfsrt-decode — dump GTFS-realtime .bin payloads as readable text.
+#
+#   ./gtfsrt-decode alerts.bin              -> writes alerts.txt
+#   ./gtfsrt-decode *.bin                   -> one .txt per input
+#   ./gtfsrt-decode -c tripupdates.bin      -> to stdout, for piping
+#   curl -su $METRA_CREDS $URL | ./gtfsrt-decode -c -
+#
+# Requires protoc (brew install protobuf) and gtfs-realtime.proto beside this script.
+
+emulate -L zsh
+set -euo pipefail
+
+PROTO=${GTFSRT_PROTO:-${0:A:h}/gtfs-realtime.proto}
+TYPE=transit_realtime.FeedMessage
+
+to_stdout=0
+raw_time=0
+use_utc=0
+summary=0
+typeset -a inputs
+
+while (( $# )); do
+  case $1 in
+    -c|--stdout)  to_stdout=1 ;;
+    --raw-time)   raw_time=1 ;;
+    --utc)        use_utc=1 ;;
+    -s|--summary) summary=1 ;;
+    -h|--help)    sed -n '2,12p' ${0:A} | sed 's/^# \?//'; exit 0 ;;
+    -)            inputs+=$1 ;;
+    -*)           print -u2 "gtfsrt-decode: unknown option: $1"; exit 2 ;;
+    *)            inputs+=$1 ;;
+  esac
+  shift
+done
+
+(( $#inputs )) || { print -u2 "usage: gtfsrt-decode [-c] [-s] [--utc] <file.bin|-> ..."; exit 2 }
+
+command -v protoc >/dev/null || { print -u2 "gtfsrt-decode: protoc not found (brew install protobuf)"; exit 3 }
+[[ -f $PROTO ]] || { print -u2 "gtfsrt-decode: proto not found: $PROTO"; exit 3 }
+
+# Rewrite epoch-second fields in place: "timestamp: 1786568111" gains a human date.
+# Only the fields GTFS-RT actually defines as epochs, and only plausible values.
+humanize() {
+  if (( raw_time )); then cat; return; fi
+  perl -pe '
+    BEGIN { $utc = '"$use_utc"'; }
+    s{^(\s*(?:timestamp|time|scheduled_time|start|end)): (\d{10})$}
+     { my $t = $2;
+       my @c = $utc ? gmtime($t) : localtime($t);
+       sprintf("%s: %s (%04d-%02d-%02d %02d:%02d:%02d%s)",
+               $1, $t, $c[5]+1900, $c[4]+1, $c[3], $c[2], $c[1], $c[0],
+               $utc ? "Z" : "") }e
+  '
+}
+
+# protoc reads stdin only, so normalise gzip and "-" into a plain stream.
+feed() {
+  local f=$1
+  if [[ $(head -c2 -- "$f" | xxd -p) == 1f8b ]]; then gzcat -- "$f"; else cat -- "$f"; fi
+}
+
+decode() {
+  local f=$1
+  # An HTML/JSON error page from the API is the usual "corrupt payload" cause.
+  if [[ $(head -c1 -- "$f") == (\<|\{) ]]; then
+    print -u2 "gtfsrt-decode: ${2:-$f}: payload is text, not protobuf — probably an API error:"
+    print -u2 "  $(head -c 200 -- "$f" | tr '\n' ' ')"
+    return 1
+  fi
+  # protoc insists the file be named relative to a --proto_path root.
+  feed "$f" | protoc --decode=$TYPE -I "${PROTO:h}" "${PROTO:t}" | humanize
+}
+
+# Header + per-type entity counts, for a quick "did the feed actually change" check.
+summarize() {
+  awk '
+    # Anchor to exactly two spaces: TripUpdate and VehiclePosition both nest
+    # their own "vehicle {" descriptor one level deeper.
+    /^  id: /                { n++ }
+    /^  trip_update \{$/     { t++ }
+    /^  vehicle \{$/         { v++ }
+    /^  alert \{$/           { a++ }
+    /^  (gtfs_realtime_version|incrementality|timestamp):/ { print "  " $0 }
+    END { printf "  entities: %d (trip_update %d, vehicle %d, alert %d)\n", n, t, v, a }
+  '
+}
+
+rc=0
+tmp=$(mktemp -t gtfsrt) || exit 3
+trap 'rm -f -- "$tmp"' EXIT
+
+for f in $inputs; do
+  if [[ $f == - ]]; then
+    cat > "$tmp"; src=$tmp; label="(stdin)"; out="stdin.txt"
+  else
+    [[ -f $f ]] || { print -u2 "gtfsrt-decode: no such file: $f"; rc=1; continue }
+    src=$f; label=$f; out=${f:r}.txt
+  fi
+
+  if (( summary )); then
+    print "$label:"
+    decode "$src" "$label" | summarize || rc=1
+  elif (( to_stdout )); then
+    (( $#inputs > 1 )) && print "===== $label ====="
+    decode "$src" "$label" || rc=1
+  else
+    if decode "$src" "$label" > "$out"; then
+      print "$label -> $out ($(wc -l < "$out" | tr -d ' ') lines)"
+    else
+      rm -f -- "$out"; rc=1
+    fi
+  fi
+done
+
+exit $rc

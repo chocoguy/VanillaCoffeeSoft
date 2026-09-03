@@ -1,0 +1,4885 @@
+header {
+  gtfs_realtime_version: "2.0"
+  incrementality: FULL_DATASET
+  timestamp: 1786578631 (2026-08-12 18:50:31)
+}
+entity {
+  id: "1"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW637_V4_B"
+      start_time: "15:45:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 32
+      stop_id: "HARVARD"
+      schedule_relationship: NO_DATA
+    }
+    vehicle {
+      id: "8442"
+      label: "637"
+    }
+    timestamp: 1786578619 (2026-08-12 18:50:19)
+  }
+}
+entity {
+  id: "2"
+  trip_update {
+    trip {
+      trip_id: "SWS_SW823_V4_B"
+      start_time: "18:42:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "SWS"
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786579954 (2026-08-12 19:12:34)
+      }
+      stop_id: "WRIGHTWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786580074 (2026-08-12 19:14:34)
+      }
+      stop_id: "ASHBURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786580314 (2026-08-12 19:18:34)
+      }
+      stop_id: "OAKLAWN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786580554 (2026-08-12 19:22:34)
+      }
+      stop_id: "CHICRIDGE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786580734 (2026-08-12 19:25:34)
+      }
+      stop_id: "WORTH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786580854 (2026-08-12 19:27:34)
+      }
+      stop_id: "PALOSHTS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786581034 (2026-08-12 19:30:34)
+      }
+      stop_id: "PALOSPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786581334 (2026-08-12 19:35:34)
+      }
+      stop_id: "143RD-SWS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786581574 (2026-08-12 19:39:34)
+      }
+      stop_id: "153RD-SWS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786582054 (2026-08-12 19:47:34)
+      }
+      stop_id: "179TH-SWS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8578"
+      label: "823"
+    }
+    timestamp: 1786578622 (2026-08-12 18:50:22)
+  }
+}
+entity {
+  id: "3"
+  trip_update {
+    trip {
+      trip_id: "RI_RI429_V2_B"
+      start_time: "18:05:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786578862 (2026-08-12 18:54:22)
+      }
+      stop_id: "HICKORYCRK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786579102 (2026-08-12 18:58:22)
+      }
+      stop_id: "MOKENA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786579462 (2026-08-12 19:04:22)
+      }
+      stop_id: "NEWLENOX"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786580422 (2026-08-12 19:20:22)
+      }
+      stop_id: "JOLIET"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8574"
+      label: "429"
+    }
+    timestamp: 1786578622 (2026-08-12 18:50:22)
+  }
+}
+entity {
+  id: "4"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN362_V2_B"
+      start_time: "18:24:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786578777 (2026-08-12 18:52:57)
+      }
+      stop_id: "EVANSTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786578897 (2026-08-12 18:54:57)
+      }
+      stop_id: "MAINST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579077 (2026-08-12 18:57:57)
+      }
+      stop_id: "ROGERPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786579257 (2026-08-12 19:00:57)
+      }
+      stop_id: "PETERSON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786579497 (2026-08-12 19:04:57)
+      }
+      stop_id: "RAVENSWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786579917 (2026-08-12 19:11:57)
+      }
+      stop_id: "CLYBOURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786580577 (2026-08-12 19:22:57)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8437"
+      label: "362"
+    }
+    timestamp: 1786578627 (2026-08-12 18:50:27)
+  }
+}
+entity {
+  id: "5"
+  trip_update {
+    trip {
+      trip_id: "RI_RI431_V2_B"
+      start_time: "18:35:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786578753 (2026-08-12 18:52:33)
+      }
+      stop_id: "LONGWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786578933 (2026-08-12 18:55:33)
+      }
+      stop_id: "WASHHGTS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579233 (2026-08-12 19:00:33)
+      }
+      stop_id: "VERMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579413 (2026-08-12 19:03:33)
+      }
+      stop_id: "ROBBINS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579593 (2026-08-12 19:06:33)
+      }
+      stop_id: "MIDLOTHIAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786579833 (2026-08-12 19:10:33)
+      }
+      stop_id: "OAKFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580133 (2026-08-12 19:15:33)
+      }
+      stop_id: "TINLEYPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786580313 (2026-08-12 19:18:33)
+      }
+      stop_id: "TINLEY80TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786580553 (2026-08-12 19:22:33)
+      }
+      stop_id: "HICKORYCRK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786580793 (2026-08-12 19:26:33)
+      }
+      stop_id: "MOKENA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581153 (2026-08-12 19:32:33)
+      }
+      stop_id: "NEWLENOX"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786582113 (2026-08-12 19:48:33)
+      }
+      stop_id: "JOLIET"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8560"
+      label: "431"
+    }
+    timestamp: 1786578616 (2026-08-12 18:50:16)
+  }
+}
+entity {
+  id: "6"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW62_V1_B"
+      start_time: "18:13:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786578758 (2026-08-12 18:52:38)
+      }
+      stop_id: "RIVRFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786578938 (2026-08-12 18:55:38)
+      }
+      stop_id: "OAKPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579478 (2026-08-12 19:04:38)
+      }
+      stop_id: "KEDZIE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580318 (2026-08-12 19:18:38)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8422"
+      label: "62"
+    }
+    timestamp: 1786578630 (2026-08-12 18:50:30)
+  }
+}
+entity {
+  id: "7"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1277_V2_B"
+      start_time: "18:05:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786578871 (2026-08-12 18:54:31)
+      }
+      stop_id: "LISLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579351 (2026-08-12 19:02:31)
+      }
+      stop_id: "NAPERVILLE"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8596"
+      label: "1277"
+    }
+    timestamp: 1786578627 (2026-08-12 18:50:27)
+  }
+}
+entity {
+  id: "8"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW665_V3_B"
+      start_time: "18:22:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786578807 (2026-08-12 18:53:27)
+      }
+      stop_id: "CUMBERLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786579047 (2026-08-12 18:57:27)
+      }
+      stop_id: "MTPROSPECT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786579347 (2026-08-12 19:02:27)
+      }
+      stop_id: "ARLINGTNHT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579587 (2026-08-12 19:06:27)
+      }
+      stop_id: "ARLINGTNPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579827 (2026-08-12 19:10:27)
+      }
+      stop_id: "PALATINE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580247 (2026-08-12 19:17:27)
+      }
+      stop_id: "BARRINGTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786580727 (2026-08-12 19:25:27)
+      }
+      stop_id: "FOXRG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786580907 (2026-08-12 19:28:27)
+      }
+      stop_id: "CARY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786581207 (2026-08-12 19:33:27)
+      }
+      stop_id: "PINGREE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786581387 (2026-08-12 19:36:27)
+      }
+      stop_id: "CRYSTAL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786581987 (2026-08-12 19:46:27)
+      }
+      stop_id: "WOODSTOCK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786583127 (2026-08-12 20:05:27)
+      }
+      stop_id: "HARVARD"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8426"
+      label: "665"
+    }
+    timestamp: 1786578627 (2026-08-12 18:50:27)
+  }
+}
+entity {
+  id: "9"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW57_V2_B"
+      start_time: "17:50:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579031 (2026-08-12 18:57:11)
+      }
+      stop_id: "GENEVA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8470"
+      label: "57"
+    }
+    timestamp: 1786578617 (2026-08-12 18:50:17)
+  }
+}
+entity {
+  id: "10"
+  trip_update {
+    trip {
+      trip_id: "ME_ME138_V3_B"
+      start_time: "18:52:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 18
+      departure {
+        time: 1786578720 (2026-08-12 18:52:00)
+      }
+      stop_id: "UNIVERSITY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786578960 (2026-08-12 18:56:00)
+      }
+      stop_id: "RICHTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579080 (2026-08-12 18:58:00)
+      }
+      stop_id: "MATTESON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786579200 (2026-08-12 19:00:00)
+      }
+      stop_id: "211TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579320 (2026-08-12 19:02:00)
+      }
+      stop_id: "OLYMPIA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579500 (2026-08-12 19:05:00)
+      }
+      stop_id: "FLOSSMOOR"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579680 (2026-08-12 19:08:00)
+      }
+      stop_id: "HOMEWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579800 (2026-08-12 19:10:00)
+      }
+      stop_id: "CALUMET"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579920 (2026-08-12 19:12:00)
+      }
+      stop_id: "HAZELCREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580100 (2026-08-12 19:15:00)
+      }
+      stop_id: "HARVEY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580220 (2026-08-12 19:17:00)
+      }
+      stop_id: "147TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786580340 (2026-08-12 19:19:00)
+      }
+      stop_id: "IVANHOE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786580460 (2026-08-12 19:21:00)
+      }
+      stop_id: "RIVERDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786580760 (2026-08-12 19:26:00)
+      }
+      stop_id: "KENSINGTN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 36
+      arrival {
+        time: 1786580940 (2026-08-12 19:29:00)
+      }
+      stop_id: "103RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 39
+      arrival {
+        time: 1786581120 (2026-08-12 19:32:00)
+      }
+      stop_id: "87TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 41
+      arrival {
+        time: 1786581240 (2026-08-12 19:34:00)
+      }
+      stop_id: "79TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 45
+      arrival {
+        time: 1786581540 (2026-08-12 19:39:00)
+      }
+      stop_id: "59TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 46
+      arrival {
+        time: 1786581660 (2026-08-12 19:41:00)
+      }
+      stop_id: "55-56-57TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 47
+      arrival {
+        time: 1786581780 (2026-08-12 19:43:00)
+      }
+      stop_id: "51ST-53RD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786582200 (2026-08-12 19:50:00)
+      }
+      stop_id: "MUSEUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786582380 (2026-08-12 19:53:00)
+      }
+      stop_id: "VANBUREN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786582620 (2026-08-12 19:57:00)
+      }
+      stop_id: "MILLENNIUM"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1327"
+      label: "138"
+    }
+    timestamp: 1786578616 (2026-08-12 18:50:16)
+  }
+}
+entity {
+  id: "11"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1292_V2_B"
+      start_time: "18:05:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786578697 (2026-08-12 18:51:37)
+      }
+      stop_id: "BROOKFIELD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786578757 (2026-08-12 18:52:37)
+      }
+      stop_id: "HOLLYWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786578877 (2026-08-12 18:54:37)
+      }
+      stop_id: "RIVERSIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579177 (2026-08-12 18:59:37)
+      }
+      stop_id: "BERWYN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579477 (2026-08-12 19:04:37)
+      }
+      stop_id: "CICERO"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579777 (2026-08-12 19:09:37)
+      }
+      stop_id: "BNWESTERN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580017 (2026-08-12 19:13:37)
+      }
+      stop_id: "HALSTED"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580557 (2026-08-12 19:22:37)
+      }
+      stop_id: "CUS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8589"
+      label: "1292"
+    }
+    timestamp: 1786578625 (2026-08-12 18:50:25)
+  }
+}
+entity {
+  id: "12"
+  trip_update {
+    trip {
+      trip_id: "HC_HC919_V1_B"
+      start_time: "17:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "HC"
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579521 (2026-08-12 19:05:21)
+      }
+      stop_id: "JOLIET"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8400"
+      label: "919"
+    }
+    timestamp: 1786578621 (2026-08-12 18:50:21)
+  }
+}
+entity {
+  id: "13"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW666_V3_B"
+      start_time: "18:15:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786578648 (2026-08-12 18:50:48)
+      }
+      stop_id: "ARLINGTNHT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786578948 (2026-08-12 18:55:48)
+      }
+      stop_id: "MTPROSPECT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786579128 (2026-08-12 18:58:48)
+      }
+      stop_id: "CUMBERLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786579368 (2026-08-12 19:02:48)
+      }
+      stop_id: "DESPLAINES"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580088 (2026-08-12 19:14:48)
+      }
+      stop_id: "JEFFERSONP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786580388 (2026-08-12 19:19:48)
+      }
+      stop_id: "CLYBOURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581048 (2026-08-12 19:30:48)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8450"
+      label: "666"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "14"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1275_V2_B"
+      start_time: "18:00:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786579407 (2026-08-12 19:03:27)
+      }
+      stop_id: "AURORA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8607"
+      label: "1275"
+    }
+    timestamp: 1786578622 (2026-08-12 18:50:22)
+  }
+}
+entity {
+  id: "15"
+  trip_update {
+    trip {
+      trip_id: "MD-W_MW2247_V1_B"
+      start_time: "18:40:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-W"
+    }
+    stop_time_update {
+      stop_sequence: 4
+      arrival {
+        time: 1786578656 (2026-08-12 18:50:56)
+      }
+      stop_id: "WESTERNAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786579256 (2026-08-12 19:00:56)
+      }
+      stop_id: "GALEWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579436 (2026-08-12 19:03:56)
+      }
+      stop_id: "MONTCLARE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579556 (2026-08-12 19:05:56)
+      }
+      stop_id: "ELMWOODPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579736 (2026-08-12 19:08:56)
+      }
+      stop_id: "RIVERGROVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786579976 (2026-08-12 19:12:56)
+      }
+      stop_id: "FRANKLIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580336 (2026-08-12 19:18:56)
+      }
+      stop_id: "BENSENVIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580576 (2026-08-12 19:22:56)
+      }
+      stop_id: "WOODDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580816 (2026-08-12 19:26:56)
+      }
+      stop_id: "ITASCA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786581056 (2026-08-12 19:30:56)
+      }
+      stop_id: "MEDINAH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786581176 (2026-08-12 19:32:56)
+      }
+      stop_id: "ROSELLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581536 (2026-08-12 19:38:56)
+      }
+      stop_id: "SCHAUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786581716 (2026-08-12 19:41:56)
+      }
+      stop_id: "HANOVERP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786581956 (2026-08-12 19:45:56)
+      }
+      stop_id: "BARTLETT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786582436 (2026-08-12 19:53:56)
+      }
+      stop_id: "NATIONALS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786582556 (2026-08-12 19:55:56)
+      }
+      stop_id: "ELGIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786583216 (2026-08-12 20:06:56)
+      }
+      stop_id: "BIGTIMBER"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8501"
+      label: "2247"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "16"
+  trip_update {
+    trip {
+      trip_id: "MD-N_MN2145_V2_B"
+      start_time: "17:52:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-N"
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786578641 (2026-08-12 18:50:41)
+      }
+      stop_id: "LAKEFRST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579301 (2026-08-12 19:01:41)
+      }
+      stop_id: "LIBERTYVIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579661 (2026-08-12 19:07:41)
+      }
+      stop_id: "PRAIRIEXNG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580021 (2026-08-12 19:13:41)
+      }
+      stop_id: "GRAYSLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8608"
+      label: "2145"
+    }
+    timestamp: 1786578625 (2026-08-12 18:50:25)
+  }
+}
+entity {
+  id: "17"
+  trip_update {
+    trip {
+      trip_id: "SWS_SW821_V1_B"
+      start_time: "17:42:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "SWS"
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786578944 (2026-08-12 18:55:44)
+      }
+      stop_id: "LARAWAY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579544 (2026-08-12 19:05:44)
+      }
+      stop_id: "MANHATTAN"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8445"
+      label: "821"
+    }
+    timestamp: 1786578623 (2026-08-12 18:50:23)
+  }
+}
+entity {
+  id: "18"
+  trip_update {
+    trip {
+      trip_id: "ME_ME729_V1_B"
+      start_time: "18:12:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786578770 (2026-08-12 18:52:50)
+      }
+      stop_id: "HAZELCREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786578950 (2026-08-12 18:55:50)
+      }
+      stop_id: "CALUMET"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786579190 (2026-08-12 18:59:50)
+      }
+      stop_id: "HOMEWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786579370 (2026-08-12 19:02:50)
+      }
+      stop_id: "FLOSSMOOR"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786579550 (2026-08-12 19:05:50)
+      }
+      stop_id: "OLYMPIA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786579730 (2026-08-12 19:08:50)
+      }
+      stop_id: "211TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 35
+      arrival {
+        time: 1786579910 (2026-08-12 19:11:50)
+      }
+      stop_id: "MATTESON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 36
+      arrival {
+        time: 1786580150 (2026-08-12 19:15:50)
+      }
+      stop_id: "RICHTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 37
+      arrival {
+        time: 1786580390 (2026-08-12 19:19:50)
+      }
+      stop_id: "UNIVERSITY"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1377"
+      label: "729"
+    }
+    timestamp: 1786578618 (2026-08-12 18:50:18)
+  }
+}
+entity {
+  id: "19"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1261_V2_B"
+      start_time: "17:00:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 28
+      stop_id: "AURORA"
+      schedule_relationship: NO_DATA
+    }
+    vehicle {
+      id: "8601"
+      label: "1261"
+    }
+    timestamp: 1786578626 (2026-08-12 18:50:26)
+  }
+}
+entity {
+  id: "20"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN360_V9_B"
+      start_time: "17:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786578680 (2026-08-12 18:51:20)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8447"
+      label: "360"
+    }
+    timestamp: 1786578626 (2026-08-12 18:50:26)
+  }
+}
+entity {
+  id: "21"
+  trip_update {
+    trip {
+      trip_id: "ME_ME225_V1_B"
+      start_time: "18:02:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 51
+      arrival {
+        time: 1786578749 (2026-08-12 18:52:29)
+      }
+      stop_id: "RACINE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786578869 (2026-08-12 18:54:29)
+      }
+      stop_id: "ASHLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786578989 (2026-08-12 18:56:29)
+      }
+      stop_id: "BURROAK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786579169 (2026-08-12 18:59:29)
+      }
+      stop_id: "BLUEISLAND"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1297"
+      label: "225"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "22"
+  trip_update {
+    trip {
+      trip_id: "ME_ME336_V2_B"
+      start_time: "18:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 46
+      arrival {
+        time: 1786578743 (2026-08-12 18:52:23)
+      }
+      stop_id: "55-56-57TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 47
+      arrival {
+        time: 1786578863 (2026-08-12 18:54:23)
+      }
+      stop_id: "51ST-53RD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 48
+      arrival {
+        time: 1786578983 (2026-08-12 18:56:23)
+      }
+      stop_id: "47TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 50
+      arrival {
+        time: 1786579283 (2026-08-12 19:01:23)
+      }
+      stop_id: "MCCORMICK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786579463 (2026-08-12 19:04:23)
+      }
+      stop_id: "MUSEUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786579643 (2026-08-12 19:07:23)
+      }
+      stop_id: "VANBUREN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786579883 (2026-08-12 19:11:23)
+      }
+      stop_id: "MILLENNIUM"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1293"
+      label: "336"
+    }
+    timestamp: 1786578623 (2026-08-12 18:50:23)
+  }
+}
+entity {
+  id: "23"
+  trip_update {
+    trip {
+      trip_id: "ME_ME339_V2_B"
+      start_time: "18:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 39
+      arrival {
+        time: 1786578873 (2026-08-12 18:54:33)
+      }
+      stop_id: "STONYISLND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 40
+      arrival {
+        time: 1786578993 (2026-08-12 18:56:33)
+      }
+      stop_id: "BRYNMAWR"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 41
+      arrival {
+        time: 1786579113 (2026-08-12 18:58:33)
+      }
+      stop_id: "SOUTHSHORE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 42
+      arrival {
+        time: 1786579233 (2026-08-12 19:00:33)
+      }
+      stop_id: "WINDSORPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 43
+      arrival {
+        time: 1786579353 (2026-08-12 19:02:33)
+      }
+      stop_id: "79TH-SC"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 44
+      arrival {
+        time: 1786579473 (2026-08-12 19:04:33)
+      }
+      stop_id: "83RD-SC"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 45
+      arrival {
+        time: 1786579593 (2026-08-12 19:06:33)
+      }
+      stop_id: "87TH-SC"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 46
+      arrival {
+        time: 1786579833 (2026-08-12 19:10:33)
+      }
+      stop_id: "93RD-SC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1385"
+      label: "339"
+    }
+    timestamp: 1786578621 (2026-08-12 18:50:21)
+  }
+}
+entity {
+  id: "24"
+  trip_update {
+    trip {
+      trip_id: "RI_RI625_V3_B"
+      start_time: "17:10:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 22
+      stop_id: "VERMONT"
+      schedule_relationship: NO_DATA
+    }
+    vehicle {
+      id: "8554"
+      label: "625"
+    }
+    timestamp: 1786578620 (2026-08-12 18:50:20)
+  }
+}
+entity {
+  id: "25"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1283_V2_B"
+      start_time: "18:50:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 2
+      arrival {
+        time: 1786578929 (2026-08-12 18:55:29)
+      }
+      stop_id: "HALSTED"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 3
+      arrival {
+        time: 1786579169 (2026-08-12 18:59:29)
+      }
+      stop_id: "BNWESTERN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 4
+      arrival {
+        time: 1786579469 (2026-08-12 19:04:29)
+      }
+      stop_id: "CICERO"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 6
+      arrival {
+        time: 1786579709 (2026-08-12 19:08:29)
+      }
+      stop_id: "LAVERGNE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 7
+      arrival {
+        time: 1786579829 (2026-08-12 19:10:29)
+      }
+      stop_id: "BERWYN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786580069 (2026-08-12 19:14:29)
+      }
+      stop_id: "RIVERSIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786580249 (2026-08-12 19:17:29)
+      }
+      stop_id: "HOLLYWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786580369 (2026-08-12 19:19:29)
+      }
+      stop_id: "BROOKFIELD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786580489 (2026-08-12 19:21:29)
+      }
+      stop_id: "CONGRESSPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786580609 (2026-08-12 19:23:29)
+      }
+      stop_id: "LAGRANGE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786580729 (2026-08-12 19:25:29)
+      }
+      stop_id: "STONEAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786580909 (2026-08-12 19:28:29)
+      }
+      stop_id: "WESTSPRING"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786581089 (2026-08-12 19:31:29)
+      }
+      stop_id: "HIGHLANDS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786581209 (2026-08-12 19:33:29)
+      }
+      stop_id: "HINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786581389 (2026-08-12 19:36:29)
+      }
+      stop_id: "WHINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786581509 (2026-08-12 19:38:29)
+      }
+      stop_id: "CLARNDNHIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786581689 (2026-08-12 19:41:29)
+      }
+      stop_id: "WESTMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786581869 (2026-08-12 19:44:29)
+      }
+      stop_id: "FAIRVIEWDG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581989 (2026-08-12 19:46:29)
+      }
+      stop_id: "MAINST-DG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786582169 (2026-08-12 19:49:29)
+      }
+      stop_id: "BELMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786582349 (2026-08-12 19:52:29)
+      }
+      stop_id: "LISLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786582709 (2026-08-12 19:58:29)
+      }
+      stop_id: "NAPERVILLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786583009 (2026-08-12 20:03:29)
+      }
+      stop_id: "ROUTE59"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786583729 (2026-08-12 20:15:29)
+      }
+      stop_id: "AURORA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8583"
+      label: "1283"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "26"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN359_V2_B"
+      start_time: "17:32:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786578662 (2026-08-12 18:51:02)
+      }
+      stop_id: "ZION"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786578902 (2026-08-12 18:55:02)
+      }
+      stop_id: "WINTHROP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786579502 (2026-08-12 19:05:02)
+      }
+      stop_id: "KENOSHA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8477"
+      label: "359"
+    }
+    timestamp: 1786578625 (2026-08-12 18:50:25)
+  }
+}
+entity {
+  id: "27"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN365_V2_B"
+      start_time: "18:32:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 5
+      arrival {
+        time: 1786578869 (2026-08-12 18:54:29)
+      }
+      stop_id: "ROGERPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 7
+      arrival {
+        time: 1786579049 (2026-08-12 18:57:29)
+      }
+      stop_id: "MAINST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786579229 (2026-08-12 19:00:29)
+      }
+      stop_id: "EVANSTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786579409 (2026-08-12 19:03:29)
+      }
+      stop_id: "CENTRALST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579589 (2026-08-12 19:06:29)
+      }
+      stop_id: "WILMETTE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579709 (2026-08-12 19:08:29)
+      }
+      stop_id: "KENILWORTH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579829 (2026-08-12 19:10:29)
+      }
+      stop_id: "INDIANHILL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579949 (2026-08-12 19:12:29)
+      }
+      stop_id: "WINNETKA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786580129 (2026-08-12 19:15:29)
+      }
+      stop_id: "HUBARDWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786580309 (2026-08-12 19:18:29)
+      }
+      stop_id: "GLENCOE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580549 (2026-08-12 19:22:29)
+      }
+      stop_id: "BRAESIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580609 (2026-08-12 19:23:29)
+      }
+      stop_id: "RAVINIAPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580729 (2026-08-12 19:25:29)
+      }
+      stop_id: "RAVINIA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786580909 (2026-08-12 19:28:29)
+      }
+      stop_id: "HIGHLANDPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786581089 (2026-08-12 19:31:29)
+      }
+      stop_id: "HIGHWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581209 (2026-08-12 19:33:29)
+      }
+      stop_id: "FTSHERIDAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786581449 (2026-08-12 19:37:29)
+      }
+      stop_id: "LKFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786581689 (2026-08-12 19:41:29)
+      }
+      stop_id: "LAKEBLUFF"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786581929 (2026-08-12 19:45:29)
+      }
+      stop_id: "GRTLAKES"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786582229 (2026-08-12 19:50:29)
+      }
+      stop_id: "NCHICAGO"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786582589 (2026-08-12 19:56:29)
+      }
+      stop_id: "WAUKEGAN"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8423"
+      label: "365"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "28"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW59_V2_B"
+      start_time: "18:10:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786578590 (2026-08-12 18:49:50)
+      }
+      stop_id: "COLLEGEAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786578796 (2026-08-12 18:53:16)
+      }
+      stop_id: "WHEATON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786579036 (2026-08-12 18:57:16)
+      }
+      stop_id: "WINFIELD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579276 (2026-08-12 19:01:16)
+      }
+      stop_id: "WCHICAGO"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579816 (2026-08-12 19:10:16)
+      }
+      stop_id: "GENEVA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580296 (2026-08-12 19:18:16)
+      }
+      stop_id: "LAFOX"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580896 (2026-08-12 19:28:16)
+      }
+      stop_id: "ELBURN"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8452"
+      label: "59"
+    }
+    timestamp: 1786578616 (2026-08-12 18:50:16)
+  }
+}
+entity {
+  id: "29"
+  trip_update {
+    trip {
+      trip_id: "RI_RI629_V3_B"
+      start_time: "18:10:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786578739 (2026-08-12 18:52:19)
+      }
+      stop_id: "PRAIRIEST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579099 (2026-08-12 18:58:19)
+      }
+      stop_id: "VERMONT"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8551"
+      label: "629"
+    }
+    timestamp: 1786578619 (2026-08-12 18:50:19)
+  }
+}
+entity {
+  id: "30"
+  trip_update {
+    trip {
+      trip_id: "MD-W_MW2243_V5_B"
+      start_time: "18:15:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-W"
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786578813 (2026-08-12 18:53:33)
+      }
+      stop_id: "ITASCA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579053 (2026-08-12 18:57:33)
+      }
+      stop_id: "MEDINAH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786579233 (2026-08-12 19:00:33)
+      }
+      stop_id: "ROSELLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579593 (2026-08-12 19:06:33)
+      }
+      stop_id: "SCHAUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579833 (2026-08-12 19:10:33)
+      }
+      stop_id: "HANOVERP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786580073 (2026-08-12 19:14:33)
+      }
+      stop_id: "BARTLETT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786580613 (2026-08-12 19:23:33)
+      }
+      stop_id: "NATIONALS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580733 (2026-08-12 19:25:33)
+      }
+      stop_id: "ELGIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581333 (2026-08-12 19:35:33)
+      }
+      stop_id: "BIGTIMBER"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8521"
+      label: "2243"
+    }
+    timestamp: 1786578626 (2026-08-12 18:50:26)
+  }
+}
+entity {
+  id: "31"
+  trip_update {
+    trip {
+      trip_id: "RI_RI434_V2_B"
+      start_time: "17:55:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786579048 (2026-08-12 18:57:28)
+      }
+      stop_id: "35TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786579708 (2026-08-12 19:08:28)
+      }
+      stop_id: "LSS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8597"
+      label: "434"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "32"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1279_V2_B"
+      start_time: "18:10:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786578615 (2026-08-12 18:50:15)
+      }
+      stop_id: "HIGHLANDS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786578744 (2026-08-12 18:52:24)
+      }
+      stop_id: "HINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786578924 (2026-08-12 18:55:24)
+      }
+      stop_id: "WHINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579044 (2026-08-12 18:57:24)
+      }
+      stop_id: "CLARNDNHIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579224 (2026-08-12 19:00:24)
+      }
+      stop_id: "WESTMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786579404 (2026-08-12 19:03:24)
+      }
+      stop_id: "FAIRVIEWDG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579524 (2026-08-12 19:05:24)
+      }
+      stop_id: "MAINST-DG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579704 (2026-08-12 19:08:24)
+      }
+      stop_id: "BELMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579884 (2026-08-12 19:11:24)
+      }
+      stop_id: "LISLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786580244 (2026-08-12 19:17:24)
+      }
+      stop_id: "NAPERVILLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786580544 (2026-08-12 19:22:24)
+      }
+      stop_id: "ROUTE59"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581264 (2026-08-12 19:34:24)
+      }
+      stop_id: "AURORA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8448"
+      label: "1279"
+    }
+    timestamp: 1786578624 (2026-08-12 18:50:24)
+  }
+}
+entity {
+  id: "33"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW668_V3_B"
+      start_time: "18:20:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786578815 (2026-08-12 18:53:35)
+      }
+      stop_id: "CARY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786578995 (2026-08-12 18:56:35)
+      }
+      stop_id: "FOXRG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579475 (2026-08-12 19:04:35)
+      }
+      stop_id: "BARRINGTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579895 (2026-08-12 19:11:35)
+      }
+      stop_id: "PALATINE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786580135 (2026-08-12 19:15:35)
+      }
+      stop_id: "ARLINGTNPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786580315 (2026-08-12 19:18:35)
+      }
+      stop_id: "ARLINGTNHT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786580615 (2026-08-12 19:23:35)
+      }
+      stop_id: "MTPROSPECT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580795 (2026-08-12 19:26:35)
+      }
+      stop_id: "CUMBERLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786581035 (2026-08-12 19:30:35)
+      }
+      stop_id: "DESPLAINES"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581275 (2026-08-12 19:34:35)
+      }
+      stop_id: "DEEROAD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786581455 (2026-08-12 19:37:35)
+      }
+      stop_id: "PARKRIDGE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786581635 (2026-08-12 19:40:35)
+      }
+      stop_id: "EDISONPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786581815 (2026-08-12 19:43:35)
+      }
+      stop_id: "NORWOODP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786582055 (2026-08-12 19:47:35)
+      }
+      stop_id: "JEFFERSONP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786582295 (2026-08-12 19:51:35)
+      }
+      stop_id: "IRVINGPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786582715 (2026-08-12 19:58:35)
+      }
+      stop_id: "CLYBOURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786583375 (2026-08-12 20:09:35)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8417"
+      label: "668"
+    }
+    timestamp: 1786578623 (2026-08-12 18:50:23)
+  }
+}
+entity {
+  id: "34"
+  trip_update {
+    trip {
+      trip_id: "RI_RI512_V2_B"
+      start_time: "18:25:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 7
+      arrival {
+        time: 1786578626 (2026-08-12 18:50:26)
+      }
+      stop_id: "TINLEYPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786578922 (2026-08-12 18:55:22)
+      }
+      stop_id: "OAKFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786579162 (2026-08-12 18:59:22)
+      }
+      stop_id: "MIDLOTHIAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579342 (2026-08-12 19:02:22)
+      }
+      stop_id: "ROBBINS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579642 (2026-08-12 19:07:22)
+      }
+      stop_id: "VERMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786579822 (2026-08-12 19:10:22)
+      }
+      stop_id: "119TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786579942 (2026-08-12 19:12:22)
+      }
+      stop_id: "115TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580062 (2026-08-12 19:14:22)
+      }
+      stop_id: "111TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580182 (2026-08-12 19:16:22)
+      }
+      stop_id: "107TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786580302 (2026-08-12 19:18:22)
+      }
+      stop_id: "103RD-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580422 (2026-08-12 19:20:22)
+      }
+      stop_id: "99TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786580542 (2026-08-12 19:22:22)
+      }
+      stop_id: "95TH-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786580662 (2026-08-12 19:24:22)
+      }
+      stop_id: "91ST-BEV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786580782 (2026-08-12 19:26:22)
+      }
+      stop_id: "BRAINERD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786580962 (2026-08-12 19:29:22)
+      }
+      stop_id: "GRESHAM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581442 (2026-08-12 19:37:22)
+      }
+      stop_id: "35TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786582162 (2026-08-12 19:49:22)
+      }
+      stop_id: "LSS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8568"
+      label: "512"
+    }
+    timestamp: 1786578622 (2026-08-12 18:50:22)
+  }
+}
+entity {
+  id: "35"
+  trip_update {
+    trip {
+      trip_id: "MD-N_MN2147_V2_B"
+      start_time: "18:32:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-N"
+    }
+    stop_time_update {
+      stop_sequence: 7
+      arrival {
+        time: 1786578788 (2026-08-12 18:53:08)
+      }
+      stop_id: "GRAYLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786579028 (2026-08-12 18:57:08)
+      }
+      stop_id: "MAYFAIR"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579208 (2026-08-12 19:00:08)
+      }
+      stop_id: "FORESTGLEN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579388 (2026-08-12 19:03:08)
+      }
+      stop_id: "EDGEBROOK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579628 (2026-08-12 19:07:08)
+      }
+      stop_id: "MORTONGRV"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786579868 (2026-08-12 19:11:08)
+      }
+      stop_id: "GOLF"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786580048 (2026-08-12 19:14:08)
+      }
+      stop_id: "GLENVIEW"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786580288 (2026-08-12 19:18:08)
+      }
+      stop_id: "NGLENVIEW"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580528 (2026-08-12 19:22:08)
+      }
+      stop_id: "NBROOK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580768 (2026-08-12 19:26:08)
+      }
+      stop_id: "LAKECOOKRD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580948 (2026-08-12 19:29:08)
+      }
+      stop_id: "DEERFIELD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786581308 (2026-08-12 19:35:08)
+      }
+      stop_id: "LAKEFRST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581968 (2026-08-12 19:46:08)
+      }
+      stop_id: "LIBERTYVIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786582328 (2026-08-12 19:52:08)
+      }
+      stop_id: "PRAIRIEXNG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786582568 (2026-08-12 19:56:08)
+      }
+      stop_id: "GRAYSLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786582988 (2026-08-12 20:03:08)
+      }
+      stop_id: "ROUNDLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786583168 (2026-08-12 20:06:08)
+      }
+      stop_id: "LONGLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786583348 (2026-08-12 20:09:08)
+      }
+      stop_id: "INGLESIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786583768 (2026-08-12 20:16:08)
+      }
+      stop_id: "FOXLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8572"
+      label: "2147"
+    }
+    timestamp: 1786578631 (2026-08-12 18:50:31)
+  }
+}
+entity {
+  id: "36"
+  trip_update {
+    trip {
+      trip_id: "ME_ME134_V1_B"
+      start_time: "17:55:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 47
+      arrival {
+        time: 1786578747 (2026-08-12 18:52:27)
+      }
+      stop_id: "51ST-53RD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786579107 (2026-08-12 18:58:27)
+      }
+      stop_id: "MUSEUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786579287 (2026-08-12 19:01:27)
+      }
+      stop_id: "VANBUREN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786579587 (2026-08-12 19:06:27)
+      }
+      stop_id: "MILLENNIUM"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1365"
+      label: "134"
+    }
+    timestamp: 1786578627 (2026-08-12 18:50:27)
+  }
+}
+entity {
+  id: "37"
+  trip_update {
+    trip {
+      trip_id: "MD-W_MW2248_V1_B"
+      start_time: "18:22:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-W"
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786578633 (2026-08-12 18:50:33)
+      }
+      stop_id: "ROSELLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786578753 (2026-08-12 18:52:33)
+      }
+      stop_id: "MEDINAH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786578993 (2026-08-12 18:56:33)
+      }
+      stop_id: "ITASCA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579233 (2026-08-12 19:00:33)
+      }
+      stop_id: "WOODDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579473 (2026-08-12 19:04:33)
+      }
+      stop_id: "BENSENVIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786579833 (2026-08-12 19:10:33)
+      }
+      stop_id: "FRANKLIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580013 (2026-08-12 19:13:33)
+      }
+      stop_id: "RIVERGROVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580193 (2026-08-12 19:16:33)
+      }
+      stop_id: "ELMWOODPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580313 (2026-08-12 19:18:33)
+      }
+      stop_id: "MONTCLARE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580433 (2026-08-12 19:20:33)
+      }
+      stop_id: "GALEWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786581153 (2026-08-12 19:32:33)
+      }
+      stop_id: "WESTERNAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581933 (2026-08-12 19:45:33)
+      }
+      stop_id: "CUS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8564"
+      label: "2248"
+    }
+    timestamp: 1786578616 (2026-08-12 18:50:16)
+  }
+}
+entity {
+  id: "38"
+  trip_update {
+    trip {
+      trip_id: "ME_ME731_V2_B"
+      start_time: "18:45:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 3
+      arrival {
+        time: 1786578716 (2026-08-12 18:51:56)
+      }
+      stop_id: "MUSEUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786579136 (2026-08-12 18:58:56)
+      }
+      stop_id: "55-56-57TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579796 (2026-08-12 19:09:56)
+      }
+      stop_id: "KENSINGTN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786580036 (2026-08-12 19:13:56)
+      }
+      stop_id: "RIVERDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786580156 (2026-08-12 19:15:56)
+      }
+      stop_id: "IVANHOE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580336 (2026-08-12 19:18:56)
+      }
+      stop_id: "147TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580456 (2026-08-12 19:20:56)
+      }
+      stop_id: "HARVEY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786580636 (2026-08-12 19:23:56)
+      }
+      stop_id: "HAZELCREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786580756 (2026-08-12 19:25:56)
+      }
+      stop_id: "CALUMET"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786580876 (2026-08-12 19:27:56)
+      }
+      stop_id: "HOMEWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581056 (2026-08-12 19:30:56)
+      }
+      stop_id: "FLOSSMOOR"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786581176 (2026-08-12 19:32:56)
+      }
+      stop_id: "OLYMPIA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786581296 (2026-08-12 19:34:56)
+      }
+      stop_id: "211TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 35
+      arrival {
+        time: 1786581416 (2026-08-12 19:36:56)
+      }
+      stop_id: "MATTESON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 36
+      arrival {
+        time: 1786581596 (2026-08-12 19:39:56)
+      }
+      stop_id: "RICHTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 37
+      arrival {
+        time: 1786582256 (2026-08-12 19:50:56)
+      }
+      stop_id: "UNIVERSITY"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1241"
+      label: "731"
+    }
+    timestamp: 1786578617 (2026-08-12 18:50:17)
+  }
+}
+entity {
+  id: "39"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1307_V1_B"
+      start_time: "18:35:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786578895 (2026-08-12 18:54:55)
+      }
+      stop_id: "CONGRESSPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579075 (2026-08-12 18:57:55)
+      }
+      stop_id: "LAGRANGE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786579195 (2026-08-12 18:59:55)
+      }
+      stop_id: "STONEAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786579375 (2026-08-12 19:02:55)
+      }
+      stop_id: "WESTSPRING"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786579555 (2026-08-12 19:05:55)
+      }
+      stop_id: "HIGHLANDS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786579675 (2026-08-12 19:07:55)
+      }
+      stop_id: "HINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786579855 (2026-08-12 19:10:55)
+      }
+      stop_id: "WHINSDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579975 (2026-08-12 19:12:55)
+      }
+      stop_id: "CLARNDNHIL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786580155 (2026-08-12 19:15:55)
+      }
+      stop_id: "WESTMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580395 (2026-08-12 19:19:55)
+      }
+      stop_id: "FAIRVIEWDG"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8518"
+      label: "1307"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "40"
+  trip_update {
+    trip {
+      trip_id: "MD-N_MN2143_V1_B"
+      start_time: "17:43:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-N"
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786578870 (2026-08-12 18:54:30)
+      }
+      stop_id: "GRAYSLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786579290 (2026-08-12 19:01:30)
+      }
+      stop_id: "ROUNDLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786579470 (2026-08-12 19:04:30)
+      }
+      stop_id: "LONGLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786579650 (2026-08-12 19:07:30)
+      }
+      stop_id: "INGLESIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786580070 (2026-08-12 19:14:30)
+      }
+      stop_id: "FOXLAKE"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8538"
+      label: "2143"
+    }
+    timestamp: 1786578630 (2026-08-12 18:50:30)
+  }
+}
+entity {
+  id: "41"
+  trip_update {
+    trip {
+      trip_id: "NCS_NC117_V2_B"
+      start_time: "18:00:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "NCS"
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786578670 (2026-08-12 18:51:10)
+      }
+      stop_id: "PROSPECTHG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786578970 (2026-08-12 18:56:10)
+      }
+      stop_id: "WHEELING"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579210 (2026-08-12 19:00:10)
+      }
+      stop_id: "BUFFGROVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579450 (2026-08-12 19:04:10)
+      }
+      stop_id: "PRAIRIEVW"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579630 (2026-08-12 19:07:10)
+      }
+      stop_id: "VERNON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579990 (2026-08-12 19:13:10)
+      }
+      stop_id: "MUNDELEIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580410 (2026-08-12 19:20:10)
+      }
+      stop_id: "PRAIRCROSS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786580770 (2026-08-12 19:26:10)
+      }
+      stop_id: "NCSGRAYSLK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581010 (2026-08-12 19:30:10)
+      }
+      stop_id: "ROUNDLKBCH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786581190 (2026-08-12 19:33:10)
+      }
+      stop_id: "LAKEVILLA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 35
+      arrival {
+        time: 1786581910 (2026-08-12 19:45:10)
+      }
+      stop_id: "ANTIOCH"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8530"
+      label: "117"
+    }
+    timestamp: 1786578623 (2026-08-12 18:50:23)
+  }
+}
+entity {
+  id: "42"
+  trip_update {
+    trip {
+      trip_id: "BNSF_BN1281_V2_B"
+      start_time: "18:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "BNSF"
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579166 (2026-08-12 18:59:26)
+      }
+      stop_id: "MAINST-DG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579406 (2026-08-12 19:03:26)
+      }
+      stop_id: "BELMONT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579586 (2026-08-12 19:06:26)
+      }
+      stop_id: "LISLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579886 (2026-08-12 19:11:26)
+      }
+      stop_id: "NAPERVILLE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786580186 (2026-08-12 19:16:26)
+      }
+      stop_id: "ROUTE59"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581026 (2026-08-12 19:30:26)
+      }
+      stop_id: "AURORA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8584"
+      label: "1281"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "43"
+  trip_update {
+    trip {
+      trip_id: "RI_RI427_V2_B"
+      start_time: "17:35:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "RI"
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786578750 (2026-08-12 18:52:30)
+      }
+      stop_id: "JOLIET"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8552"
+      label: "427"
+    }
+    timestamp: 1786578630 (2026-08-12 18:50:30)
+  }
+}
+entity {
+  id: "44"
+  trip_update {
+    trip {
+      trip_id: "MD-W_MW2239_V2_B"
+      start_time: "17:45:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-W"
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786578858 (2026-08-12 18:54:18)
+      }
+      stop_id: "BARTLETT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579398 (2026-08-12 19:03:18)
+      }
+      stop_id: "NATIONALS"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786579518 (2026-08-12 19:05:18)
+      }
+      stop_id: "ELGIN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580118 (2026-08-12 19:15:18)
+      }
+      stop_id: "BIGTIMBER"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8503"
+      label: "2239"
+    }
+    timestamp: 1786578618 (2026-08-12 18:50:18)
+  }
+}
+entity {
+  id: "45"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW55_V3_B"
+      start_time: "17:40:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786579088 (2026-08-12 18:58:08)
+      }
+      stop_id: "LAFOX"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786579688 (2026-08-12 19:08:08)
+      }
+      stop_id: "ELBURN"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8408"
+      label: "55"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "46"
+  trip_update {
+    trip {
+      trip_id: "ME_ME727_V2_B"
+      start_time: "17:43:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 37
+      arrival {
+        time: 1786578568 (2026-08-12 18:49:28)
+      }
+      stop_id: "UNIVERSITY"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1319"
+      label: "727"
+    }
+    timestamp: 1786578548 (2026-08-12 18:49:08)
+  }
+}
+entity {
+  id: "47"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW663_V3_B"
+      start_time: "18:05:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786578916 (2026-08-12 18:55:16)
+      }
+      stop_id: "ARLINGTNHT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579156 (2026-08-12 18:59:16)
+      }
+      stop_id: "ARLINGTNPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579456 (2026-08-12 19:04:16)
+      }
+      stop_id: "PALATINE"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8433"
+      label: "663"
+    }
+    timestamp: 1786578616 (2026-08-12 18:50:16)
+  }
+}
+entity {
+  id: "48"
+  trip_update {
+    trip {
+      trip_id: "ME_ME227_V3_B"
+      start_time: "18:41:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786578946 (2026-08-12 18:55:46)
+      }
+      stop_id: "51ST-53RD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786579066 (2026-08-12 18:57:46)
+      }
+      stop_id: "55-56-57TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579186 (2026-08-12 18:59:46)
+      }
+      stop_id: "59TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579306 (2026-08-12 19:01:46)
+      }
+      stop_id: "63RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579486 (2026-08-12 19:04:46)
+      }
+      stop_id: "75TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786579606 (2026-08-12 19:06:46)
+      }
+      stop_id: "79TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786579666 (2026-08-12 19:07:46)
+      }
+      stop_id: "83RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786579726 (2026-08-12 19:08:46)
+      }
+      stop_id: "87TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786579846 (2026-08-12 19:10:46)
+      }
+      stop_id: "91ST-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580026 (2026-08-12 19:13:46)
+      }
+      stop_id: "103RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786580146 (2026-08-12 19:15:46)
+      }
+      stop_id: "107TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580266 (2026-08-12 19:17:46)
+      }
+      stop_id: "111TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786580386 (2026-08-12 19:19:46)
+      }
+      stop_id: "KENSINGTN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 48
+      arrival {
+        time: 1786580566 (2026-08-12 19:22:46)
+      }
+      stop_id: "STATEST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 49
+      arrival {
+        time: 1786580686 (2026-08-12 19:24:46)
+      }
+      stop_id: "STEWARTRID"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 50
+      arrival {
+        time: 1786580806 (2026-08-12 19:26:46)
+      }
+      stop_id: "WPULLMAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 51
+      arrival {
+        time: 1786580866 (2026-08-12 19:27:46)
+      }
+      stop_id: "RACINE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786580986 (2026-08-12 19:29:46)
+      }
+      stop_id: "ASHLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786581106 (2026-08-12 19:31:46)
+      }
+      stop_id: "BURROAK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786581226 (2026-08-12 19:33:46)
+      }
+      stop_id: "BLUEISLAND"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1237"
+      label: "227"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "49"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN366_V2_B"
+      start_time: "18:08:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786578696 (2026-08-12 18:51:36)
+      }
+      stop_id: "HIGHWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786578876 (2026-08-12 18:54:36)
+      }
+      stop_id: "HIGHLANDPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579056 (2026-08-12 18:57:36)
+      }
+      stop_id: "RAVINIA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579116 (2026-08-12 18:58:36)
+      }
+      stop_id: "RAVINIAPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786579236 (2026-08-12 19:00:36)
+      }
+      stop_id: "BRAESIDE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786579356 (2026-08-12 19:02:36)
+      }
+      stop_id: "GLENCOE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786579536 (2026-08-12 19:05:36)
+      }
+      stop_id: "HUBARDWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786579716 (2026-08-12 19:08:36)
+      }
+      stop_id: "WINNETKA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579836 (2026-08-12 19:10:36)
+      }
+      stop_id: "INDIANHILL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786579956 (2026-08-12 19:12:36)
+      }
+      stop_id: "KENILWORTH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786580076 (2026-08-12 19:14:36)
+      }
+      stop_id: "WILMETTE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786580256 (2026-08-12 19:17:36)
+      }
+      stop_id: "CENTRALST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786580436 (2026-08-12 19:20:36)
+      }
+      stop_id: "EVANSTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786580556 (2026-08-12 19:22:36)
+      }
+      stop_id: "MAINST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786580736 (2026-08-12 19:25:36)
+      }
+      stop_id: "ROGERPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580916 (2026-08-12 19:28:36)
+      }
+      stop_id: "PETERSON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581156 (2026-08-12 19:32:36)
+      }
+      stop_id: "RAVENSWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786581576 (2026-08-12 19:39:36)
+      }
+      stop_id: "CLYBOURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786582236 (2026-08-12 19:50:36)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8456"
+      label: "366"
+    }
+    timestamp: 1786578619 (2026-08-12 18:50:19)
+  }
+}
+entity {
+  id: "50"
+  trip_update {
+    trip {
+      trip_id: "UP-N_UN363_V2_B"
+      start_time: "18:02:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-N"
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786578657 (2026-08-12 18:50:57)
+      }
+      stop_id: "HIGHWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786578777 (2026-08-12 18:52:57)
+      }
+      stop_id: "FTSHERIDAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579017 (2026-08-12 18:56:57)
+      }
+      stop_id: "LKFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579257 (2026-08-12 19:00:57)
+      }
+      stop_id: "LAKEBLUFF"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786579497 (2026-08-12 19:04:57)
+      }
+      stop_id: "GRTLAKES"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579797 (2026-08-12 19:09:57)
+      }
+      stop_id: "NCHICAGO"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580037 (2026-08-12 19:13:57)
+      }
+      stop_id: "WAUKEGAN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786580577 (2026-08-12 19:22:57)
+      }
+      stop_id: "ZION"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786580817 (2026-08-12 19:26:57)
+      }
+      stop_id: "WINTHROP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786581417 (2026-08-12 19:36:57)
+      }
+      stop_id: "KENOSHA"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8410"
+      label: "363"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "51"
+  trip_update {
+    trip {
+      trip_id: "MD-N_MN2150_V3_B"
+      start_time: "18:02:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-N"
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786578907 (2026-08-12 18:55:07)
+      }
+      stop_id: "WESTERNAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786579627 (2026-08-12 19:07:07)
+      }
+      stop_id: "CUS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8513"
+      label: "2150"
+    }
+    timestamp: 1786578628 (2026-08-12 18:50:28)
+  }
+}
+entity {
+  id: "52"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW664_V2_B"
+      start_time: "17:45:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786578771 (2026-08-12 18:52:51)
+      }
+      stop_id: "IRVINGPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786579191 (2026-08-12 18:59:51)
+      }
+      stop_id: "CLYBOURN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786579971 (2026-08-12 19:12:51)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8425"
+      label: "664"
+    }
+    timestamp: 1786578629 (2026-08-12 18:50:29)
+  }
+}
+entity {
+  id: "53"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW661_V2_B"
+      start_time: "17:52:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786578637 (2026-08-12 18:50:37)
+      }
+      stop_id: "BARRINGTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786579117 (2026-08-12 18:58:37)
+      }
+      stop_id: "FOXRG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786579297 (2026-08-12 19:01:37)
+      }
+      stop_id: "CARY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786579657 (2026-08-12 19:07:37)
+      }
+      stop_id: "PINGREE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786579837 (2026-08-12 19:10:37)
+      }
+      stop_id: "CRYSTAL"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786580497 (2026-08-12 19:21:37)
+      }
+      stop_id: "WOODSTOCK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786581637 (2026-08-12 19:40:37)
+      }
+      stop_id: "HARVARD"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8520"
+      label: "661"
+    }
+    timestamp: 1786578624 (2026-08-12 18:50:24)
+  }
+}
+entity {
+  id: "54"
+  trip_update {
+    trip {
+      trip_id: "UP-NW_UNW667_V2_B"
+      start_time: "18:35:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-NW"
+    }
+    stop_time_update {
+      stop_sequence: 6
+      arrival {
+        time: 1786578876 (2026-08-12 18:54:36)
+      }
+      stop_id: "JEFFERSONP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 7
+      arrival {
+        time: 1786578996 (2026-08-12 18:56:36)
+      }
+      stop_id: "GLADSTONEP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 8
+      arrival {
+        time: 1786579116 (2026-08-12 18:58:36)
+      }
+      stop_id: "NORWOODP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786579296 (2026-08-12 19:01:36)
+      }
+      stop_id: "EDISONPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579476 (2026-08-12 19:04:36)
+      }
+      stop_id: "PARKRIDGE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579596 (2026-08-12 19:06:36)
+      }
+      stop_id: "DEEROAD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579836 (2026-08-12 19:10:36)
+      }
+      stop_id: "DESPLAINES"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786580016 (2026-08-12 19:13:36)
+      }
+      stop_id: "CUMBERLAND"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580256 (2026-08-12 19:17:36)
+      }
+      stop_id: "MTPROSPECT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786580556 (2026-08-12 19:22:36)
+      }
+      stop_id: "ARLINGTNHT"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580796 (2026-08-12 19:26:36)
+      }
+      stop_id: "ARLINGTNPK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786581036 (2026-08-12 19:30:36)
+      }
+      stop_id: "PALATINE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 21
+      arrival {
+        time: 1786581516 (2026-08-12 19:38:36)
+      }
+      stop_id: "BARRINGTON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786581996 (2026-08-12 19:46:36)
+      }
+      stop_id: "FOXRG"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786582176 (2026-08-12 19:49:36)
+      }
+      stop_id: "CARY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 24
+      arrival {
+        time: 1786582476 (2026-08-12 19:54:36)
+      }
+      stop_id: "PINGREE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 26
+      arrival {
+        time: 1786582896 (2026-08-12 20:01:36)
+      }
+      stop_id: "CRYSTAL"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8436"
+      label: "667"
+    }
+    timestamp: 1786578626 (2026-08-12 18:50:26)
+  }
+}
+entity {
+  id: "55"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW64_V2_B"
+      start_time: "18:25:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 9
+      arrival {
+        time: 1786578861 (2026-08-12 18:54:21)
+      }
+      stop_id: "WHEATON"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 10
+      arrival {
+        time: 1786579041 (2026-08-12 18:57:21)
+      }
+      stop_id: "COLLEGEAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 11
+      arrival {
+        time: 1786579221 (2026-08-12 19:00:21)
+      }
+      stop_id: "GLENELLYN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786579461 (2026-08-12 19:04:21)
+      }
+      stop_id: "LOMBARD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 13
+      arrival {
+        time: 1786579701 (2026-08-12 19:08:21)
+      }
+      stop_id: "VILLAPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 14
+      arrival {
+        time: 1786580001 (2026-08-12 19:13:21)
+      }
+      stop_id: "ELMHURST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786580181 (2026-08-12 19:16:21)
+      }
+      stop_id: "BERKELEY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786580361 (2026-08-12 19:19:21)
+      }
+      stop_id: "BELLWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 20
+      arrival {
+        time: 1786580661 (2026-08-12 19:24:21)
+      }
+      stop_id: "MAYWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 22
+      arrival {
+        time: 1786580841 (2026-08-12 19:27:21)
+      }
+      stop_id: "RIVRFOREST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 23
+      arrival {
+        time: 1786581021 (2026-08-12 19:30:21)
+      }
+      stop_id: "OAKPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786581561 (2026-08-12 19:39:21)
+      }
+      stop_id: "KEDZIE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786582401 (2026-08-12 19:53:21)
+      }
+      stop_id: "OTC"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8424"
+      label: "64"
+    }
+    timestamp: 1786578619 (2026-08-12 18:50:19)
+  }
+}
+entity {
+  id: "56"
+  trip_update {
+    trip {
+      trip_id: "SWS_SW824_V2_B"
+      start_time: "18:20:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "SWS"
+    }
+    stop_time_update {
+      stop_sequence: 12
+      arrival {
+        time: 1786578745 (2026-08-12 18:52:25)
+      }
+      stop_id: "WRIGHTWOOD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786580425 (2026-08-12 19:20:25)
+      }
+      stop_id: "CUS"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8595"
+      label: "824"
+    }
+    timestamp: 1786578625 (2026-08-12 18:50:25)
+  }
+}
+entity {
+  id: "57"
+  trip_update {
+    trip {
+      trip_id: "ME_ME136_V3_B"
+      start_time: "18:30:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "ME"
+    }
+    stop_time_update {
+      stop_sequence: 27
+      arrival {
+        time: 1786578810 (2026-08-12 18:53:30)
+      }
+      stop_id: "HARVEY"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786578930 (2026-08-12 18:55:30)
+      }
+      stop_id: "147TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 29
+      arrival {
+        time: 1786579050 (2026-08-12 18:57:30)
+      }
+      stop_id: "IVANHOE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 30
+      arrival {
+        time: 1786579170 (2026-08-12 18:59:30)
+      }
+      stop_id: "RIVERDALE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786579470 (2026-08-12 19:04:30)
+      }
+      stop_id: "KENSINGTN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 34
+      arrival {
+        time: 1786579590 (2026-08-12 19:06:30)
+      }
+      stop_id: "111TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 35
+      arrival {
+        time: 1786579710 (2026-08-12 19:08:30)
+      }
+      stop_id: "107TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 36
+      arrival {
+        time: 1786579830 (2026-08-12 19:10:30)
+      }
+      stop_id: "103RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 38
+      arrival {
+        time: 1786580070 (2026-08-12 19:14:30)
+      }
+      stop_id: "91ST-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 39
+      arrival {
+        time: 1786580190 (2026-08-12 19:16:30)
+      }
+      stop_id: "87TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 40
+      arrival {
+        time: 1786580310 (2026-08-12 19:18:30)
+      }
+      stop_id: "83RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 41
+      arrival {
+        time: 1786580430 (2026-08-12 19:20:30)
+      }
+      stop_id: "79TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 42
+      arrival {
+        time: 1786580550 (2026-08-12 19:22:30)
+      }
+      stop_id: "75TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 44
+      arrival {
+        time: 1786580730 (2026-08-12 19:25:30)
+      }
+      stop_id: "63RD-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 45
+      arrival {
+        time: 1786580850 (2026-08-12 19:27:30)
+      }
+      stop_id: "59TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 46
+      arrival {
+        time: 1786580970 (2026-08-12 19:29:30)
+      }
+      stop_id: "55-56-57TH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 47
+      arrival {
+        time: 1786581090 (2026-08-12 19:31:30)
+      }
+      stop_id: "51ST-53RD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 48
+      arrival {
+        time: 1786581210 (2026-08-12 19:33:30)
+      }
+      stop_id: "47TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 49
+      arrival {
+        time: 1786581390 (2026-08-12 19:36:30)
+      }
+      stop_id: "27TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 50
+      arrival {
+        time: 1786581510 (2026-08-12 19:38:30)
+      }
+      stop_id: "MCCORMICK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 51
+      arrival {
+        time: 1786581630 (2026-08-12 19:40:30)
+      }
+      stop_id: "18TH-UP"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 52
+      arrival {
+        time: 1786581750 (2026-08-12 19:42:30)
+      }
+      stop_id: "MUSEUM"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 53
+      arrival {
+        time: 1786581930 (2026-08-12 19:45:30)
+      }
+      stop_id: "VANBUREN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 54
+      arrival {
+        time: 1786582170 (2026-08-12 19:49:30)
+      }
+      stop_id: "MILLENNIUM"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "1247"
+      label: "136"
+    }
+    timestamp: 1786578630 (2026-08-12 18:50:30)
+  }
+}
+entity {
+  id: "58"
+  trip_update {
+    trip {
+      trip_id: "NCS_NC115_V3_B"
+      start_time: "17:35:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "NCS"
+    }
+    stop_time_update {
+      stop_sequence: 31
+      arrival {
+        time: 1786578984 (2026-08-12 18:56:24)
+      }
+      stop_id: "NCSGRAYSLK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 32
+      arrival {
+        time: 1786579224 (2026-08-12 19:00:24)
+      }
+      stop_id: "ROUNDLKBCH"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 33
+      arrival {
+        time: 1786579404 (2026-08-12 19:03:24)
+      }
+      stop_id: "LAKEVILLA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 35
+      arrival {
+        time: 1786580124 (2026-08-12 19:15:24)
+      }
+      stop_id: "ANTIOCH"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8525"
+      label: "115"
+    }
+    timestamp: 1786578624 (2026-08-12 18:50:24)
+  }
+}
+entity {
+  id: "59"
+  trip_update {
+    trip {
+      trip_id: "MD-N_MN2125_V2_B"
+      start_time: "15:55:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "MD-N"
+    }
+    stop_time_update {
+      stop_sequence: 31
+      stop_id: "FOXLAKE"
+      schedule_relationship: NO_DATA
+    }
+    vehicle {
+      id: "8575"
+      label: "2125"
+    }
+    timestamp: 1786578631 (2026-08-12 18:50:31)
+  }
+}
+entity {
+  id: "60"
+  trip_update {
+    trip {
+      trip_id: "UP-W_UW61_V2_B"
+      start_time: "18:20:00"
+      start_date: "20260812"
+      schedule_relationship: SCHEDULED
+      route_id: "UP-W"
+    }
+    stop_time_update {
+      stop_sequence: 15
+      arrival {
+        time: 1786578894 (2026-08-12 18:54:54)
+      }
+      stop_id: "ELMHURST"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 16
+      arrival {
+        time: 1786579134 (2026-08-12 18:58:54)
+      }
+      stop_id: "VILLAPARK"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 17
+      arrival {
+        time: 1786579374 (2026-08-12 19:02:54)
+      }
+      stop_id: "LOMBARD"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 18
+      arrival {
+        time: 1786579674 (2026-08-12 19:07:54)
+      }
+      stop_id: "GLENELLYN"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 19
+      arrival {
+        time: 1786579854 (2026-08-12 19:10:54)
+      }
+      stop_id: "COLLEGEAVE"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 25
+      arrival {
+        time: 1786580934 (2026-08-12 19:28:54)
+      }
+      stop_id: "GENEVA"
+      schedule_relationship: SCHEDULED
+    }
+    stop_time_update {
+      stop_sequence: 28
+      arrival {
+        time: 1786581954 (2026-08-12 19:45:54)
+      }
+      stop_id: "ELBURN"
+      schedule_relationship: SCHEDULED
+    }
+    vehicle {
+      id: "8406"
+      label: "61"
+    }
+    timestamp: 1786578621 (2026-08-12 18:50:21)
+  }
+}

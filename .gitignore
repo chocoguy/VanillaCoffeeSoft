@@ -8,3 +8,6 @@
 /Api/obj
 /Model/bin
 /Model/obj
+/Publish
+/deploy
+.idea

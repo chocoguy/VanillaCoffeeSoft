@@ -1,0 +1,560 @@
+header {
+  gtfs_realtime_version: "2.0"
+  incrementality: FULL_DATASET
+  timestamp: 1786578692 (2026-08-12 18:51:32)
+}
+entity {
+  id: "DevAPI-0C04F1B9-004B-47EE-A701-B75358AC611C"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "RI"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/RI?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "The Rock Island Joliet Station Elevator is Out of Service"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "The Rock Island Joliet Station elevator is out of service. Customers should use the pedestrian tunnel to access the boarding platform."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-95D31E6A-6F19-4CC4-92D7-87DDCD323633"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "HC"
+      trip {
+        trip_id: "HC_HC919_V1_B"
+        route_id: "HC"
+      }
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/HC?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=1&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "HCD #919 Delayed"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "HCD train #919 scheduled to arrive Joliet at 6:36 PM, may be operating 15 to 20 minutes behind schedule due to speed restrictions. Visit metratracker.com for the location of your train."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-94EEA091-CE3A-436B-91F3-13B64C677D03"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-N?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MDN- Western Avenue ADA Accessibility August 10 through August 17"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Due to scheduled repairs, the Western Avenue station will not be ADA accessible starting Monday, August 10 through August 17. Customers can use Healy as the alternate boarding station."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-A1C30E47-01A5-4DA5-8FBD-569EF52D8252"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "UP-W"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/UP-W?Twitter=1&Email=1&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "UPW - Melrose Park Station Closure Due to Construction Beginning Wednesday, August 12"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Beginning Wednesday, August 12 through Sunday, August 23, the Melrose Park station will close due to nearby road construction. Passengers must board trains at Maywood or Bellwood during this period."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-2F5137E2-9C5C-4303-BD96-D7C043A2FC5F"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "UP-W"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/UP-W?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "UPW Kedzie Station Construction"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Due to construction, the east end of platform 2 (south platform) at Kedzie will be closed until the end of October. Please use caution near the work area during this time. Updates will be provided."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-EFEA09FE-5B96-4E02-8EDE-C7CA28CDDC5F"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-N?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MDN - Regular Weekend Service Aug. 15-16 for Air and Water Show"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "On Saturday, August 15 and Sunday, August 16, Metra will operate a normal weekend schedule with service to and from Fox Lake for the Air and Water Show. Please visit Metra.com for schedule information."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-B6D951D3-376D-4A36-A3AC-B01B92AA6F3B"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-N?Twitter=1&Email=1&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "Milwaukee District North Line Midday Service Changes Begin August 3"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Due to construction, inbound trains 2128 through 2142 will originate from Lake Forest, and outbound trains 2103 through 2119 will terminate at Lake Forest. Please visit Metra.com or MetraTracker.com to plan your alternate travel."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-AA8323FE-92E1-44EE-A4AA-CB9DA4F6E6AE"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "RI"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/RI?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MED and RID - Blue Island Station Construction, August 14-17"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Metra Electric and Rock Island passengers transferring between lines at Blue Island should expect to cross at Grove Street with longer travel times between trains and will not be ADA accessible due to road construction at Vermont Street August 14-17."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-9B3D61BE-08A0-4145-80A2-D9054B532DF9"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "RI"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/RI?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "Major Rock Island Line Construction Begins the Evening of Friday, August 21"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Major Rock Island construction begins the evening of Friday, August 21. Evening train cancellations are posted on Metra.com. There will be no train service on August 22 and 23. Visit Metra.com or MetraTracker.com to plan alternate travel."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-3C0F04F2-FBB3-4A2F-8D9E-FB054776C9BA"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "NCS"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/NCS?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "NCS- Western Avenue ADA Accessibility August 10 through August 17"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Due to scheduled repairs, the Western Avenue station will not be ADA accessible starting Monday, August 10 through August 17."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-20B2DC9F-0D8C-45A4-A7D6-AB57CAD7E135"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "UP-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/UP-N?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "UPN Kenosha Elevator Out of Service"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "The Kenosha elevator is out of service. Customers can use Zion or Winthrop Harbor as alternate boarding stations."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-F89A043E-343C-4481-AFE7-DC9986CA857E"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "ME"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/ME?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MED and RID - Blue Island Station Construction, August 14-17"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Metra Electric and Rock Island passengers transferring between lines at Blue Island should expect to cross at Grove Street with longer travel times between trains and will not be ADA accessible due to road construction at Vermont Street August 14-17."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-86982C18-0CFD-402C-8BDB-0E35E7EA7436"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-W"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-W?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MDW- Western Avenue ADA Accessibility August 10 through August 17"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Due to scheduled repairs, the Western Avenue station will not be ADA accessible starting Monday, August 10 through August 17. Customers can use Hanson Park as the alternate boarding station."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-C832EC05-F78B-48D3-B307-5A38704146B8"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "ME"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/ME?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "ME Beginning May 18 South Water Elevator Will Be Closed"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Starting May 18, the South Water elevator will be closed during reconstruction. ADA passengers should use Van Buren St or Museum Campus/11th St for elevator access. For the latest service alert info visit Metra.com/MEelevators."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-A8459B72-CFCA-461F-BB26-C3CF32A783A6"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-N?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MDN - Hanover Park Station Construction"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Beginning July 27 through August 27, access will be restricted to areas of the Hanover Park station due to floor repairs. It is recommended that customers check all track facings doors during normal station hours for access and use caution in work areas."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-C75DF84E-34F5-42EC-8103-43197EFF8089"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "BNSF"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/BNSF?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "BNSF Harlem Avenue Station Closed Due to Construction from August 6 thru August 15"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "Beginning Thursday, August 6 through Saturday, August 15, the Harlem Avenue station will close due to road construction. Passengers must board trains at Berwyn or Riverside during this period."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-F7154797-5FC3-4694-A9C6-8C453DA1AD57"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-W"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-W?Twitter=0&Email=0&SMS=0&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "MDW-Bensenville Station Depot will be closed"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "MDW-Starting Saturday, August 1 through Tuesday, September 1, the Bensenville station depot will be closed for roof replacement. Please use caution near the work area during this time."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-BF9ED319-A2ED-4A3B-A824-7994BBEE2384"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "MD-N"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/MD-N?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "Milwaukee District North Major Track Project Affecting Midday Service Aug 3 - Oct 23"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "August 3 - October 23, track work to replace 4.5 miles of rail will affect midday service between Fox Lake and Lake Forest. Passengers boarding at these stations should utilize alternate Metra lines or other transportation. Visit metra.com for more info."
+        language: "en"
+      }
+    }
+  }
+}
+entity {
+  id: "DevAPI-B22D7F76-BEDB-4738-AD28-6EA5BE475F1E"
+  alert {
+    informed_entity {
+      agency_id: "METRA"
+      route_id: "RI"
+    }
+    cause: UNKNOWN_CAUSE
+    effect: UNKNOWN_EFFECT
+    url {
+      translation {
+        text: "https://metrarail.com/maps-schedules/train-lines/RI?Twitter=1&Email=1&SMS=1&Website=1&OnBoard=0&gtfsrt=1"
+        language: "en"
+      }
+    }
+    header_text {
+      translation {
+        text: "RID Heritage Corridor Joliet elevator is out of service"
+        language: "en"
+      }
+    }
+    description_text {
+      translation {
+        text: "The Heritage Corridor Joliet elevator is out of service.  Customers should use the pedestrian tunnel to access the boarding platform."
+        language: "en"
+      }
+    }
+  }
+}

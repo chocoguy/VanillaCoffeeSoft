@@ -8,7 +8,7 @@ public interface IMalWebData
     Task<MAL_Anime_Search?> GetMALAnimeSearch(string? query);
     Task<MAL_Anime_Search?> GetMALSeasonalAnime(int year, string season);
     Task<List<MAL_Recommendation>?> GetMALAnimeRecommendations(string malId);
-    Task<List<MAL_RelatedAnime>?> GetMALAnimeRelatedAnime(string malId);
+    Task<List<MAL_RelatedAnime>?> GetMALAnimeRelatedAnime(string malId); 
     Task<List<MAL_Picture>?> GetMALAnimePictures(string malId);
 }
 

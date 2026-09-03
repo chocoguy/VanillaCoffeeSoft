@@ -7,9 +7,7 @@ using Api.WebDataService;
 using Dapper;
 using Microsoft.AspNetCore.HttpOverrides;
 
-// All dates cross the DB boundary as RFC 3339 UTC with 'Z' — must run before any query.
-// RemoveTypeMap is required: DateTime is in Dapper's built-in type map, which would
-// otherwise take precedence over the handlers when binding parameters.
+
 SqlMapper.RemoveTypeMap(typeof(DateTime));
 SqlMapper.RemoveTypeMap(typeof(DateTime?));
 SqlMapper.AddTypeHandler(new SqliteDateTimeHandler());
@@ -17,6 +15,7 @@ SqlMapper.AddTypeHandler(new SqliteNullableDateTimeHandler());
 
 var builder = WebApplication.CreateBuilder(args);
 var malApiKey = builder.Configuration.GetSection("MalClientId").Value;
+var metraApiKey = builder.Configuration.GetSection("MetraGtfsKey").Value;
 var systemVersion = builder.Configuration.GetSection("SystemVersion").Value;
 
 
@@ -33,8 +32,15 @@ builder.Logging.AddFilter("Api", LogLevel.Information);
 //Services
 
 builder.Services.AddScoped<IAnimeRespository, AnimeRepository>();
+builder.Services.AddScoped<IWindyPointsRepository, WindyPointsRepository>();
+builder.Services.AddScoped<IBlueTrainsRepository, BlueTrainsRepository>();
+builder.Services.AddScoped<IBlueTrainsStaticImportRepository, BlueTrainsStaticImportRepository>();
+builder.Services.AddScoped<IBlueTrainsRealtimeRepository, BlueTrainsRealtimeRepository>();
 builder.Services.AddScoped<IMalWebData, MalWebData>();
+builder.Services.AddScoped<IMetraWebData, MetraWebData>();
 builder.Services.AddHostedService<StaleRecordSyncService>();
+builder.Services.AddHostedService<BlueTrainsStaticSyncService>();
+builder.Services.AddHostedService<BlueTrainsRealtimeSyncService>();
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers()
@@ -49,16 +55,34 @@ builder.Services.AddHttpClient(
     {client.BaseAddress = new Uri("https://api.myanimelist.net/v2/"); client.DefaultRequestHeaders.Add("X-MAL-CLIENT-ID", malApiKey);}
 );
 
+builder.Services.AddHttpClient(
+    "MetraClientRealTime",
+    client =>
+    {
+        client.BaseAddress = new Uri("https://gtfspublic.metrarr.com/gtfs/public/");
+        client.DefaultRequestHeaders.Add("Authorization", $"Bearer {metraApiKey}");
+    }
+);
+
+builder.Services.AddHttpClient(
+    "MetraClientStatic",
+    client =>
+    {
+        client.BaseAddress = new Uri("https://schedules.metrarail.com/gtfs/");
+    }
+);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
 
 
-builder.Services.AddSingleton<IDbConnectionFactory, SqliteConnectionFactory>();
+builder.Services.AddSingleton<IAniTrakDbConnectionFactory, AniTrakDbConnectionFactory>();
+builder.Services.AddSingleton<IWindyPointsDbConnectionFactory, WindyPointsDbConnectionFactory>();
+builder.Services.AddSingleton<IBlueTrainsStaticDbConnectionFactory, BlueTrainsStaticDbConnectionFactory>();
+builder.Services.AddSingleton<IBlueTrainsRealtimeDbConnectionFactory, BlueTrainsRealtimeDbConnectionFactory>();
 
-// Per-client-IP fixed window. Runs after UseForwardedHeaders so RemoteIpAddress
-// is the forwarded client IP, not the reverse proxy's.
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
